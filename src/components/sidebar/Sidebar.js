@@ -19,7 +19,7 @@ export const ScrollItem = styled.div`
 
 const MENU_OPTIONS = [
     { id: 1, name: 'Inicio', path: '/', Icon: <GrHomeRounded /> },
-    { id: 2, name: 'Buscar', path: '/Channel', Icon: <FiSearch className='icon' /> },
+    { id: 2, name: 'Buscar', path: '/search', Icon: <FiSearch className='icon' /> },
     { id: 2, name: 'Tu Biblioteca', path: '/Library', Icon: <VscLibrary className='icon' /> }
 ]
 

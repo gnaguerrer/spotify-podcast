@@ -17,7 +17,7 @@ const Card = props => {
                 </span>
                 <span className='Card-date' >
                     {
-                        `${dateFormat(date)?.day}  ${dateFormat(date)?.month} `
+                        updated_at && `${dateFormat(date)?.day}  ${dateFormat(date)?.month} `
                     }
                 </span>
             </div>

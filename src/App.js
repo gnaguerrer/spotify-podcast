@@ -12,6 +12,7 @@ import { Player } from './components/player/Player';
 import { Header } from './components/header/Header';
 import './theme/root.css';
 import './App.css';
+import { Library } from './views/library/Library';
 
 function App() {
   const { myPlayList, currentClip, getPlaylist, getCurrentClip } = useUser()
@@ -33,6 +34,7 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/details/:type/:id" element={<Details />} />
               <Route path="/section" element={<Details />} />
+              <Route path="/Library" element={<Library />} />
             </Routes>
           </div>
         </div>

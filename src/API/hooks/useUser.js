@@ -12,10 +12,22 @@ const useUser = () => {
     /**
       * Obtiene las playlist del usuario
       */
-    const getPlaylist = async () => {
+    const getPlaylist = async (type) => {
+        console.log(type)
         const { data, error, response } = await axiosRequest(METHOD.GET, Routes.get.playlist(ID))
         if (!error) {
-            setMyPlayList({ loading: false, data: data?.body.playlist })
+            if (type === 'library') {
+                setMyPlayList({
+                    loading: false,
+                    data: data?.body.playlist.map(item => ({
+                        title: item.title,
+                        urls: { banner_image: { original: item.image } }
+                    }))
+                })
+            } else {
+
+                setMyPlayList({ loading: false, data: data?.body.playlist })
+            }
         }
     }
 
