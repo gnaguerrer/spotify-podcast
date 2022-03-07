@@ -1,0 +1,92 @@
+.Player-container {
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--gray-main-player);
+  border-top: 0.5px solid var(--gray-main-text);
+}
+
+.Player-container-description {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.Player-container-description-text-cont {
+  display: flex;
+  min-width: 250px;
+  width: 55%;
+  flex-direction: column;
+  margin-left: 5px;
+  overflow: hidden;
+}
+
+.Player-text {
+  color: #fff;
+  opacity: 0.7;
+}
+
+.Player-text:hover {
+  opacity: 1;
+}
+
+.Player-icon {
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.Player-icon-play {
+  font-size: 38px;
+  margin: 0px 8px;
+}
+
+.Player-text-title {
+  font-size: 13px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 4px;
+}
+
+.Player-text-author {
+  font-size: 12px;
+  margin-top: 2px;
+  margin-bottom: 0px;
+  margin-left: 4px;
+}
+
+.Player-text-title:hover,
+.Player-text-author:hover {
+  text-decoration: underline;
+}
+
+.Player-container-description-img {
+  width: 55px;
+  height: 55px;
+  object-fit: cover;
+}
+
+.Player-container-control {
+  min-width: 300px;
+  width: 40%;
+}
+
+.Player-container-control-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Player-icon-controls {
+  margin: 0px 3px;
+}
+
+.Player-container-options {
+  min-width: 200px;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

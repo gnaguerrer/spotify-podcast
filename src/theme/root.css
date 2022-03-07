@@ -1,0 +1,9 @@
+:root {
+  --primary-color: #1ed760;
+  --gray-main-text: #4d4d4d;
+  --gray-main-player: #181818;
+}
+
+.Without-underline {
+  text-decoration: none;
+}

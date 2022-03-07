@@ -1,0 +1,98 @@
+@media (min-width: 1200px) and (max-width: 2000px) {
+  .Container {
+    padding-left: 1.5vw;
+  }
+}
+
+@media (min-width: 990px) and (max-width: 1199px) {
+  .Container {
+    padding-left: 1.6vw;
+  }
+}
+
+.Container {
+  min-height: 90vh;
+  min-width: 250px;
+  width: 15vw;
+  background-color: rgb(0, 0, 0);
+  padding-top: 3vh;
+  padding-left: 1.5vw;
+  padding-right: 3px;
+}
+
+.Menu-container {
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 27%;
+}
+
+.Library-container {
+  overflow-y: scroll;
+  height: 51%;
+}
+
+.Logo {
+  height: 37px;
+  max-width: 131px;
+  object-fit: contain;
+}
+
+.Divider {
+  height: 1px;
+  width: 92%;
+  background-color: var(--gray-main-text);
+  opacity: 0.4;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-right: 3px;
+}
+
+.Logo-container {
+  display: flex;
+}
+
+svg path {
+  stroke: rgb(255, 255, 255);
+}
+
+.icon {
+  color: rgb(255, 255, 255);
+}
+
+.Menu-item-text {
+  margin-left: 5%;
+  font-weight: 600;
+}
+
+.Menu-item-text-other {
+  margin-left: 2%;
+  font-weight: 600;
+}
+
+.Library-text {
+  color: rgb(255, 255, 255);
+  text-align: left;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+/* Scrollbar  */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--gray-main-text);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b3b3b3;
+}
+
+.centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
