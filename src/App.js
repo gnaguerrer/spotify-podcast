@@ -1,5 +1,4 @@
-import React, { useEffect } from 'react'
-import logo from './logo.svg';
+import React, { useState } from 'react'
 import { Sidebar } from './components/sidebar/Sidebar';
 import {
   BrowserRouter,
@@ -16,22 +15,19 @@ import './App.css';
 
 function App() {
   const { myPlayList, currentClip, getPlaylist, getCurrentClip } = useUser()
+  const [scrollY, setScrollY] = useState()
 
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll)
-    return () => {
-
-    }
-  }, [])
-
-  const handleScroll = () => { console.log(window.pageYOffset) }
+  const handleScroll = (event) => {
+    let posY = event.target.scrollTop
+    setScrollY(posY)
+  }
 
   return (
     <BrowserRouter>
       <div className='Main-container'>
         <Sidebar playList={myPlayList} getPlaylist={getPlaylist} />
-        <div className='Main-container-content'>
-          <Header />
+        <div className='Main-container-content' onScroll={handleScroll}>
+          <Header scrollY={scrollY} />
           <div>
             <Routes>
               <Route path="/" element={<Home />} />
