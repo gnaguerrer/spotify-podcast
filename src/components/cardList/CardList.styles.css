@@ -1,0 +1,39 @@
+.CardList-container {
+  width: 98%;
+  margin-left: 20px;
+  overflow-x: hidden;
+  margin-bottom: 40px;
+}
+
+.CardList-container-data {
+  display: flex;
+  margin-top: 10px;
+  overflow-x: hidden;
+  justify-content: space-between;
+}
+
+.CardList-container-title {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  overflow-x: hidden;
+}
+
+.CardList-title {
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.CardList-title:hover,
+.CardList-options:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.CardList-options {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}

@@ -1,0 +1,29 @@
+.Home-background {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    to right bottom,
+    #212121,
+    #1e1e1e,
+    #1b1b1b,
+    #191919,
+    #161616,
+    #151515,
+    #131313,
+    #121212,
+    #121212,
+    #121212,
+    #121212,
+    #121212
+  );
+  overflow-y: scroll;
+  padding-top: 80px;
+}
+
+.Home-loading {
+  display: flex;
+  height: 90vh;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
